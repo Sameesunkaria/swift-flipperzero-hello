@@ -1,0 +1,4 @@
+module CFlipperApplication [system] {
+  umbrella header "CFlipperApplication.h"
+  export *
+}

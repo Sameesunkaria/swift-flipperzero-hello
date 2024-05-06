@@ -16,10 +16,10 @@
 // provided by the Flipper Zero firmware would need to be modified to support
 // posix_memalign.
 int posix_memalign(void** memptr, size_t alignment, size_t size) {
-    void *mem = malloc(size);
-    if (!mem) return 1;
-    *memptr = mem;
-    return 0;
+  void *mem = malloc(size);
+  if (!mem) return 1;
+  *memptr = mem;
+  return 0;
 }
 
 // The following symbols are provided by libc and libc_nano but statically linking libc

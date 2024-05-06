@@ -19,7 +19,7 @@ This project intends to demonstrate that it is possible to run Swift apps on the
 ## Building and Running the App
 
 ### Prerequisites
-- [**Swift Trunk Development Snapshot Build**]((https://www.swift.org/download/#trunk-development-main)): At the time of writing this, the Embedded mode for Swift is only available in the Trunk Development snapshot builds. You will need to install a trunk snapshot to be able to successfully build the app.
+- [**Swift Trunk Development Snapshot Build**](https://www.swift.org/download/#trunk-development-main): At the time of writing this, the Embedded mode for Swift is only available in the Trunk Development snapshot builds. You will need to install a trunk snapshot to be able to successfully build the app.
 - **macOS and Xcode**: The build script is currently only supported on macOS. In theory it should be fairly easy to adapt it for Linux, but I haven't tried it. On macOS you will need to have an appropriate version of Xcode that is compatible with the Swift toolchain you are using.
 - [**qFlipper**](https://flipperzero.one/update) (Optional): You may use qFlipper to copy the application to the Flipper Zero micro SD card.
 

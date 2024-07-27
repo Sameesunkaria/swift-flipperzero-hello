@@ -1,7 +1,7 @@
 import FlipperApplication
 
 final class HelloModel {
-  enum AnimaitonDirection: Hashable {
+  enum AnimationDirection: Hashable {
     case up
     case down
 
@@ -13,13 +13,13 @@ final class HelloModel {
   enum Event {
     case input(InputEvent)
     case timerTick
-    case animationDirectionChanged(AnimaitonDirection)
+    case animationDirectionChanged(AnimationDirection)
   }
 
   struct State: Hashable {
     var textPosition = Point(x: 58, y: 8)
     var stepSize: Int32 = 2
-    var textAnimationDirection: AnimaitonDirection = .down
+    var textAnimationDirection: AnimationDirection = .down
     var showsFreeMemory: Bool = false
   }
 

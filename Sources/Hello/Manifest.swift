@@ -14,7 +14,7 @@ let applicationManifest = ApplicationManifestV1(
     manifestVersion: 1,
     // Version 86.0; Must match the version defined in
     // flipperzero-firmware/targets/f7/api_symbols.csv
-    apiVersion: 0x00560001,
+    apiVersion: 0x00560000,
     hardwareTargetID: 7
   ),
   stackSize: 2048,

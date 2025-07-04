@@ -51,7 +51,7 @@ Flash the locally built firmware on to the Flipper Zero:
 ```
 
 > [!IMPORTANT]
-> This step is crucial as the submodule includes necessary modifications to the firmware for [correctly loading a Swift app](#relocations) on the Flipper Zero.
+> You may skip this step if you don't want to install a custom built firmware on your Flipper Zero. If you decide to skip this step, make sure that you checkout the `flipperzero-firmware` submodule at the commit that matches the version of the firmware you have installed on your Flipper Zero. You may also need to update the `apiVersion` in [`Sources/Hello/Manifest.swift`](Sources/Hello/Manifest.swift) to match.
 
 #### Step 4:
 
@@ -73,6 +73,9 @@ TOOLCHAINS="org.swift.59202403311a" ./build.sh
 Copy the generated `build/Hello.fap` file to the `/apps/Examples` directory on the SD card (you can use [`qFlipper`](https://github.com/flipperdevices/qFlipper) for this) and launch the app!
 
 ## From Code to a Running App: The Journey
+
+> [!Note]
+> This section is a retrospective on the steps I took to get Swift running on the Flipper Zero. Since I worked on this project, both the Flipper Zero firmware and Embedded Swift mode have changed significantly, so some of the steps may no longer be necessary or may have changed.
 
 ### Embedded Swift
 

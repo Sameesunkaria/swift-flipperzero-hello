@@ -31,7 +31,7 @@ public struct Canvas {
     canvas_draw_str_aligned(pointer, position.x, position.y, AlignLeft, AlignTop, text.utf8Start)
   }
 
-  public func drawIcon(_ icon: [UInt8], at position: Point, width: UInt8, height: UInt8) {
+  public func drawIcon(_ icon: [UInt8], at position: Point, width: UInt16, height: UInt16) {
     icon.withUnsafeBufferPointer { iconPointer in
       let frames = [iconPointer.baseAddress]
       frames.withUnsafeBufferPointer { framesPointer in

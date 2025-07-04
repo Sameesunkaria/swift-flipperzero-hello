@@ -12,9 +12,9 @@ let applicationManifest = ApplicationManifestV1(
   base: ManifestBase(
     manifestMagic: 0x52474448,
     manifestVersion: 1,
-    // Version 61.1; Must match the version defined in
+    // Version 86.0; Must match the version defined in
     // flipperzero-firmware/targets/f7/api_symbols.csv
-    apiVersion: 0x003D0001,
+    apiVersion: 0x00560000,
     hardwareTargetID: 7
   ),
   stackSize: 2048,

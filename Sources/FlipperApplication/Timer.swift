@@ -1,7 +1,7 @@
 import CFlipperApplication
 
 public struct Timer: ~Copyable {
-  public var pointer: UnsafeMutableRawPointer
+  public var pointer: OpaquePointer
   public var callbackPointer: UnsafeMutablePointer<() -> Void>
 
   public init(type: FuriTimerType, callback: @escaping () -> Void) {

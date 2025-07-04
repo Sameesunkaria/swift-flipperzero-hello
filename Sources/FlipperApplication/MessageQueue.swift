@@ -1,7 +1,7 @@
 import CFlipperApplication
 
 public struct MessageQueue<T>: ~Copyable {
-  public var messageQueue: UnsafeMutableRawPointer
+  public var messageQueue: OpaquePointer
   public var capacity: UInt32
 
   public init(capacity: UInt32) {

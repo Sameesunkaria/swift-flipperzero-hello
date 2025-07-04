@@ -70,9 +70,9 @@ struct HelloView: View {
     // Draw the Swift logo.
     canvas.drawIcon(
       swiftIcon,
-      at: Point(x: 0, y: Int32((canvas.height - swiftIconSize) / 2)),
-      width: UInt8(swiftIconSize),
-      height: UInt8(swiftIconSize)
+      at: Point(x: 0, y: Int32((canvas.height - Int(swiftIconSize)) / 2)),
+      width: swiftIconSize,
+      height: swiftIconSize
     )
 
     // Display the free memory when enabled.
